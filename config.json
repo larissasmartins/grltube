@@ -1,0 +1,36 @@
+{
+    "name": "Larissa Martins",
+    "job": "Frontend developer",
+    "github": "larissasmartins",
+    "playlists": {
+        "jogos": [
+            {
+                "title": "Título 1",
+                "url": "url 1",
+                "thumb": "thumbnail do vídeo 1"
+            },
+            {
+                "title": "Título 2",
+                "url": "url 2",
+                "thumb": "thumbnail do vídeo 2"
+            },
+            {
+                "title": "Título 3",
+                "url": "url 3",
+                "thumb": "thumbnail do vídeo 3"
+            }
+        ],
+        "front-end": [
+            {
+                "title": "título 1",
+                "url": "url 1",
+                "thumb": "thumbnail do vídeo 1"
+            },
+            {
+                "title": "título 2",
+                "url": "url 2",
+                "thumb": "thumbnail do vídeo 2"
+            }
+        ]
+    }
+}
