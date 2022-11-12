@@ -1,26 +1,34 @@
 import config from "../config.json";
 import styled from "styled-components";
+import { CSSReset } from "/src/components/CSSReset";
+import Menu from "/src/components/Menu";
+import Timeline from "/src/components/Timeline";
 
 function HomePage() {
-    const homeStyle = { backgroundColor: "purple" };
+    const homeStyle = { //backgroundColor: "purple" 
+    };
 
     return (
-        <div style={homeStyle}>
-            <Menu></Menu>
-            <Header></Header>
-            <Timeline playlists={config.playlists}></Timeline>
-        </div>
-    )
+        <>
+            <CSSReset />
+            <div style={homeStyle}>
+                <Menu />
+                <Header />
+                <Timeline playlists={config.playlists}></Timeline>
+            </div>
+        </>
+    );
 
 }
 
 export default HomePage
 
-function Menu() {
+/*function Menu() {
+
     return (
         <div>Menu</div>
     )
-}
+}*/
 
 const StyledHeader = styled.div`
     img {
@@ -59,7 +67,7 @@ function Timeline(propriedades) {
     const playlistNames = Object.keys(propriedades.playlists); //pegar a propriedade com js
 
     return (
-        <div>
+        <StyledTimeline>
             {playlistNames.map((playlistName) => {
                 const videos = propriedades.playlists[playlistName];
                 console.log(playlistName);
@@ -82,6 +90,6 @@ function Timeline(propriedades) {
                     </section>
                 )
             })}
-        </div>
+        </StyledTimeline>
     )
 }
